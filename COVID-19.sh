@@ -34,11 +34,11 @@ sed -i 's/Middlesex-London Health Unit/London/g' $HOME/Documents/COVID-19/ON-Cas
 
 
 #filter out the wanted regions from Ontario data and remove extra columns
-awk -F, '$11 ~ /^Halton$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  > $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv
-awk -F, '$13 ~ /^Waterloo$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
+awk -F, '$12~ /^Halton$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  > $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv
+awk -F, '$14 ~ /^Waterloo$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
 
-awk -F, '$11 ~ /^Toronto$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
-awk -F, '$11 ~ /^London$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
+awk -F, '$12 ~ /^Toronto$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
+awk -F, '$12 ~ /^London$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
 cut -d, -f2,11 $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv > $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim.csv
 
 
