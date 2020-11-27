@@ -85,4 +85,6 @@ cd COVID
 
 git add Canada-Case-Data.csv Regional-Case-Data.csv COVID-19.sh
 git commit -m "update files"
+git push https://peliopoulos:K5matQ38LS8n8AC@github.com/peliopoulos/COVID --all --force
+
 #git push https://peliopoulos:[password]@github.com/peliopoulos/COVID --all --force
