@@ -80,11 +80,16 @@ awk -F, '{ print $2,$3,$1}' OFS=, $HOME/Documents/COVID-19/Regional-Case-Counts-
 #create copy of this script without last line
 sed \$d $HOME/Documents/COVID-19.sh > $HOME/Documents/COVID-19/git/COVID/COVID-19.sh
 echo "#git push https://peliopoulos:[password]@github.com/peliopoulos/COVID --all --force" >> $HOME/Documents/COVID-19/git/COVID/COVID-19.sh
+
+#copy files to GDrive
+rclone copy /home/peter/Documents/COVID-19/git/COVID googledrive:"COVID Case Tracking"/RawData
+
+#load the spreadsheet to allow it to update
+curl "https://docs.google.com/spreadsheets/d/1XDWwxSS-zCiPFHNvUMkGefBX5MAwUWqnkIaYUUBMLNk/edit?usp=sharing" > /dev/null
+
 #upload files to git
 cd COVID
 
 git add Canada-Case-Data.csv Regional-Case-Data.csv COVID-19.sh
 git commit -m "update files"
-git push https://peliopoulos:K5matQ38LS8n8AC@github.com/peliopoulos/COVID --all --force
-
 #git push https://peliopoulos:[password]@github.com/peliopoulos/COVID --all --force
