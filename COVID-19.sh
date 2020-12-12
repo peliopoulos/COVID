@@ -41,6 +41,7 @@ awk -F, '$12 ~ /^Waterloo$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  
 awk -F, '$12 ~ /^Toronto$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
 awk -F, '$12 ~ /^London$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
 cut -d, -f2,12 $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv > $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim-name.csv
+#filter for dates starting with 202 to remove junk data
 awk -F, '$1 ~ /^202/ {print}' $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim-name.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim.csv
 
 
@@ -70,7 +71,6 @@ sed -i 's/\"Northern Interior\"/PrinceGeorgeArea/g' $HOME/Documents/COVID-19/BC-
 
 
 #combine Ontario, BC data
-
 cat $HOME/Documents/COVID-19/BC-Case-Data-slim.csv $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim.csv > $HOME/Documents/COVID-19/Regional-Case-Draft.csv
 
 #count unique lines
@@ -83,11 +83,13 @@ sed -r 's/\s+/,/' $HOME/Documents/COVID-19/Regional-Case-Counts-trimmed.csv > $H
 #put header on regional file
 echo "Date,Region,Case_Count" > $HOME/Documents/COVID-19/git/COVID/Regional-Case-Data.csv
 
+#add BC Regional Data
+cat $HOME/Documents/COVID-19/BC-Regional-Case-Data-filtered.csv >> $HOME/Documents/COVID-19/git/COVID/Regional-Case-Data.csv
+
 #put first column at the end
 awk -F, '{ print $2,$3,$1}' OFS=, $HOME/Documents/COVID-19/Regional-Case-Counts-trimmed-csv.csv >> $HOME/Documents/COVID-19/git/COVID/Regional-Case-Data.csv
 
-#add BC Regional Data
-cat $HOME/Documents/COVID-19/BC-Regional-Case-Data-filtered.csv >> $HOME/Documents/COVID-19/git/COVID/Regional-Case-Data.csv
+
 
 #create copy of this script without last line
 sed \$d $HOME/Documents/COVID-19.sh > $HOME/Documents/COVID-19/git/COVID/COVID-19.sh
