@@ -370,7 +370,7 @@ Date,Region,Case_Count
 2020-06-11,Waterloo,3
 2020-06-12,Halton,2
 2020-06-12,LowerMainland,14
-2020-06-12,Toronto,10
+2020-06-12,Toronto,11
 2020-06-12,Waterloo,6
 2020-06-13,Halton,3
 2020-06-13,LowerMainland,13
@@ -438,7 +438,7 @@ Date,Region,Case_Count
 2020-06-27,LowerMainland,13
 2020-06-27,Toronto,4
 2020-06-28,LowerMainland,3
-2020-06-28,Toronto,3
+2020-06-28,Toronto,4
 2020-06-29,Island,1
 2020-06-29,LowerMainland,11
 2020-06-29,Toronto,5
@@ -890,7 +890,7 @@ Date,Region,Case_Count
 2020-10-09,Island,3
 2020-10-09,LowerMainland,161
 2020-10-09,Northern,9
-2020-10-09,Toronto,22
+2020-10-09,Toronto,23
 2020-10-10,Halton,1
 2020-10-10,Interior,8
 2020-10-10,Island,3
@@ -1034,7 +1034,7 @@ Date,Region,Case_Count
 2020-11-04,Island,7
 2020-11-04,LowerMainland,413
 2020-11-04,Northern,5
-2020-11-04,Toronto,16
+2020-11-04,Toronto,17
 2020-11-05,Halton,6
 2020-11-05,Interior,26
 2020-11-05,Island,5
@@ -1088,6 +1088,7 @@ Date,Region,Case_Count
 2020-11-13,Halton,4
 2020-11-13,Interior,33
 2020-11-13,Island,11
+2020-11-13,London,1
 2020-11-13,LowerMainland,606
 2020-11-13,Northern,4
 2020-11-13,Toronto,33
@@ -1196,7 +1197,7 @@ Date,Region,Case_Count
 2020-11-30,Island,11
 2020-11-30,LowerMainland,537
 2020-11-30,Northern,22
-2020-11-30,Toronto,37
+2020-11-30,Toronto,38
 2020-12-01,Halton,5
 2020-12-01,Interior,84
 2020-12-01,Island,17
@@ -1260,6 +1261,7 @@ Date,Region,Case_Count
 2020-12-11,LowerMainland,25
 43.65659125,,1
 .52091315,,1
+M5B 1W2,,1
 2020-01-26,PrinceGeorgeArea,0
 2020-01-27,PrinceGeorgeArea,0
 2020-01-28,PrinceGeorgeArea,0
