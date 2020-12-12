@@ -12,6 +12,7 @@ curl -o $HOME/Documents/COVID-19/World-Case-Data.csv https://raw.githubuserconte
 curl -o $HOME/Documents/COVID-19/BC-Case-Data.csv http://www.bccdc.ca/Health-Info-Site/Documents/BCCDC_COVID19_Dashboard_Case_Details.csv
 #get Ontario Case Counts
 curl -o $HOME/Documents/COVID-19/ON-Case-Data.csv https://data.ontario.ca/dataset/f4112442-bdc8-45d2-be3c-12efae72fb27/resource/455fd63b-603d-4608-8216-7d8647f43350/download/conposcovidloc.csv
+curl -o $HOME/Documents/COVID-19/BC-Regional-Case-Data.csv http://www.bccdc.ca/Health-Info-Site/Documents/BCCDC_COVID19_Regional_Summary_Data.csv
 
 #filter out Canada data from World
 head -n 1 $HOME/Documents/COVID-19/World-Case-Data.csv > $HOME/Documents/COVID-19/Canada-Case-Data-DRAFT.csv
@@ -57,10 +58,17 @@ sed -i 's/\"//g' $HOME/Documents/COVID-19/BC-Case-Data-slim.csv
 #remove header
 sed -i '1d' $HOME/Documents/COVID-19/BC-Case-Data-slim.csv
 
+#remove extra columms from BC Regional Data
+cut -d, -f1,4,5 $HOME/Documents/COVID-19/BC-Regional-Case-Data.csv > $HOME/Documents/COVID-19/BC-Regional-Case-Data-slim.csv
+
+#filter by Northern Interior cases
+awk -F, '$2 ~ /^"Northern Interior"$/ {print}' $HOME/Documents/COVID-19/BC-Regional-Case-Data-slim.csv  > $HOME/Documents/COVID-19/BC-Regional-Case-Data-filtered.csv
+
+#shorten names in BC Regional
+sed -i 's/\"Northern Interior\"/PrinceGeorgeArea/g' $HOME/Documents/COVID-19/BC-Regional-Case-Data-filtered.csv
 
 
-
-#combine Ontario and BC data
+#combine Ontario, BC data
 
 cat $HOME/Documents/COVID-19/BC-Case-Data-slim.csv $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim.csv > $HOME/Documents/COVID-19/Regional-Case-Draft.csv
 
@@ -76,6 +84,9 @@ echo "Date,Region,Case_Count" > $HOME/Documents/COVID-19/git/COVID/Regional-Case
 
 #put first column at the end
 awk -F, '{ print $2,$3,$1}' OFS=, $HOME/Documents/COVID-19/Regional-Case-Counts-trimmed-csv.csv >> $HOME/Documents/COVID-19/git/COVID/Regional-Case-Data.csv
+
+#add BC Regional Data
+cat $HOME/Documents/COVID-19/BC-Regional-Case-Data-filtered.csv >> $HOME/Documents/COVID-19/git/COVID/Regional-Case-Data.csv
 
 #create copy of this script without last line
 sed \$d $HOME/Documents/COVID-19.sh > $HOME/Documents/COVID-19/git/COVID/COVID-19.sh
