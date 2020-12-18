@@ -40,9 +40,8 @@ awk -F, '$12 ~ /^Waterloo$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  
 
 awk -F, '$12 ~ /^Toronto$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
 awk -F, '$12 ~ /^London$/ {print}' $HOME/Documents/COVID-19/ON-Case-Data.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv 
-cut -d, -f2,12 $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv > $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim-name.csv
-#filter for dates starting with 202 to remove junk data - doesn't work but doesn't hurt
-awk -F, '$1 ~ /^202/ {print}' $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim-name.csv  >> $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim.csv
+cut -d, -f2,12 $HOME/Documents/COVID-19/ON-Case-Data-filtered.csv > $HOME/Documents/COVID-19/ON-Case-Data-filtered-slim.csv
+
 
 
 
