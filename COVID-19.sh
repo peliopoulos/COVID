@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#make folders if they don't exist yet
+mkdir -p $HOME/Documents/COVID-19/git
+
 #prepare git
 cd $HOME/Documents/COVID-19/git
 rm -rf COVID
@@ -91,11 +94,11 @@ awk -F, '{ print $2,$3,$1}' OFS=, $HOME/Documents/COVID-19/Regional-Case-Counts-
 
 
 #create copy of this script without last line
-sed \$d $HOME/Documents/COVID-19.sh > $HOME/Documents/COVID-19/git/COVID/COVID-19.sh
+sed \$d $HOME/Scripts/COVID-19.sh > $HOME/Documents/COVID-19/git/COVID/COVID-19.sh
 echo "#git push https://peliopoulos:[password]@github.com/peliopoulos/COVID --all --force" >> $HOME/Documents/COVID-19/git/COVID/COVID-19.sh
 
 #copy files to GDrive
-rclone copy /home/peter/Documents/COVID-19/git/COVID googledrive:"COVID Case Tracking"/RawData
+#rclone copy /home/peter/Documents/COVID-19/git/COVID googledrive:"COVID Case Tracking"/RawData
 
 #load the spreadsheet to allow it to update
 curl "https://docs.google.com/spreadsheets/d/1XDWwxSS-zCiPFHNvUMkGefBX5MAwUWqnkIaYUUBMLNk/edit?usp=sharing" > /dev/null
