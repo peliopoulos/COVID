@@ -28,6 +28,11 @@ cut -d, -f4,5 --complement $HOME/Documents/COVID-19/Canada-Case-Data-transposed.
 sed -i '2d;3d;4d' $HOME/Documents/COVID-19/git/COVID/Canada-Case-Data.csv
 #clean up wording
 sed -i 's/Province\/State/Date/g' $HOME/Documents/COVID-19/git/COVID/Canada-Case-Data.csv
+#Fix year 2020 recognition problem
+sed -i 's+/20,+/2020,+g' $HOME/Documents/COVID-19/git/COVID/Canada-Case-Data.csv
+sed -i 's+/21,+/2021,+g' $HOME/Documents/COVID-19/git/COVID/Canada-Case-Data.csv
+sed -i 's+/22,+/2022,+g' $HOME/Documents/COVID-19/git/COVID/Canada-Case-Data.csv
+
 
 
 #shorten names in Ontario data
