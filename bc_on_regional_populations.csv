@@ -1,24 +1,24 @@
-Northern,0.325
-Interior,0.742
-Vancouver_Coastal,1.25
-Vancouver_Island,0.85
-Fraser,1.8
-Central_Vancouver_Island,
-East_Kootenay,
-Fraser_East,
-Fraser_North,
-Fraser_South,
-Kootenay_Boundary,
-North_Shore_/_Coast_Garibaldi,
-North_Vancouver_Island,
+Northern,325000
+Interior,742000
+Vancouver Coastal,1250000
+Vancouver Island,850000
+Fraser,1800000
+Central Vancouver Island,
+East Kootenay,
+Fraser East,
+Fraser North,
+Fraser South,
+Kootenay Boundary,
+North Shore / Coast Garibaldi,
+North Vancouver Island,
 Northeast,
-Northern_Interior,0.14
+Northern Interior,140000
 Northwest,
 Okanagan,
-Out_of_Canada,
+Out of Canada,
 Richmond,
-South_Vancouver_Island,
-Thompson_Cariboo_Shuswap,
+South Vancouver Island,
+Thompson Cariboo Shuswap,
 Unknown,
 Barrie,
 Belleville,
@@ -30,27 +30,27 @@ Guelph,
 Hamilton,
 Kenora,
 Kingston,
-London,0.405
+London,405000
 Mississauga,
-New_Liskeard,
+New Liskeard,
 Newmarket,
-North_Bay,
-Oakville,0.548
+North Bay,
+Oakville,548000
 Ottawa,
-Owen_Sound,
+Owen Sound,
 Pembroke,
 Peterborough,
-Point_Edward,
-Port_Hope,
-Sault_Ste._Marie,
+Point Edward,
+Port Hope,
+Sault Ste. Marie,
 Simcoe,
-St._Thomas,
+St. Thomas,
 Stratford,
 Sudbury,
 Thorold,
-Thunder_Bay,
+Thunder Bay,
 Timmins,
-Toronto,2.9
-Waterloo,0.618
+Toronto,2900000
+Waterloo,618000
 Whitby,
 Windsor,
