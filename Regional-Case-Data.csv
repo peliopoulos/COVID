@@ -474,6 +474,7 @@ Date,Region,Case_Count
 2021-05-15,PrinceGeorgeArea,6
 2021-05-16,PrinceGeorgeArea,7
 2021-05-17,PrinceGeorgeArea,7
+2021-05-18,PrinceGeorgeArea,16
 2020-01-01,Waterloo,1
 2020-01-21,Toronto,1
 2020-01-22,Toronto,2
@@ -2723,7 +2724,7 @@ Date,Region,Case_Count
 2021-01-09,Interior,46
 2021-01-09,Island,30
 2021-01-09,London,75
-2021-01-09,LowerMainland,374
+2021-01-09,LowerMainland,373
 2021-01-09,Northern,80
 2021-01-09,Other,2
 2021-01-09,Toronto,776
@@ -3522,7 +3523,7 @@ Date,Region,Case_Count
 2021-04-14,Interior,91
 2021-04-14,Island,44
 2021-04-14,London,90
-2021-04-14,LowerMainland,1031
+2021-04-14,LowerMainland,1032
 2021-04-14,Northern,57
 2021-04-14,Toronto,1302
 2021-04-14,Waterloo,80
@@ -3587,7 +3588,7 @@ Date,Region,Case_Count
 2021-04-22,Interior,71
 2021-04-22,Island,24
 2021-04-22,London,84
-2021-04-22,LowerMainland,882
+2021-04-22,LowerMainland,883
 2021-04-22,Northern,37
 2021-04-22,Other,1
 2021-04-22,Toronto,1019
@@ -3728,7 +3729,7 @@ Date,Region,Case_Count
 2021-05-09,Interior,38
 2021-05-09,Island,13
 2021-05-09,London,55
-2021-05-09,LowerMainland,507
+2021-05-09,LowerMainland,508
 2021-05-09,Northern,10
 2021-05-09,Toronto,539
 2021-05-09,Waterloo,47
@@ -3744,7 +3745,7 @@ Date,Region,Case_Count
 2021-05-11,Interior,42
 2021-05-11,Island,10
 2021-05-11,London,47
-2021-05-11,LowerMainland,517
+2021-05-11,LowerMainland,516
 2021-05-11,Northern,6
 2021-05-11,Toronto,518
 2021-05-11,Waterloo,51
@@ -3752,7 +3753,7 @@ Date,Region,Case_Count
 2021-05-12,Interior,60
 2021-05-12,Island,19
 2021-05-12,London,25
-2021-05-12,LowerMainland,508
+2021-05-12,LowerMainland,507
 2021-05-12,Northern,18
 2021-05-12,Toronto,501
 2021-05-12,Waterloo,52
@@ -3760,12 +3761,12 @@ Date,Region,Case_Count
 2021-05-13,Interior,33
 2021-05-13,Island,8
 2021-05-13,London,44
-2021-05-13,LowerMainland,418
+2021-05-13,LowerMainland,417
 2021-05-13,Northern,22
 2021-05-13,Toronto,387
 2021-05-13,Waterloo,45
 2021-05-14,Halton,42
-2021-05-14,Interior,42
+2021-05-14,Interior,41
 2021-05-14,Island,18
 2021-05-14,London,31
 2021-05-14,LowerMainland,379
@@ -3776,7 +3777,7 @@ Date,Region,Case_Count
 2021-05-15,Interior,52
 2021-05-15,Island,9
 2021-05-15,London,21
-2021-05-15,LowerMainland,419
+2021-05-15,LowerMainland,416
 2021-05-15,Northern,13
 2021-05-15,Toronto,238
 2021-05-15,Waterloo,29
@@ -3789,12 +3790,16 @@ Date,Region,Case_Count
 2021-05-16,Toronto,210
 2021-05-16,Waterloo,22
 2021-05-17,Halton,30
-2021-05-17,Interior,54
-2021-05-17,Island,11
+2021-05-17,Interior,56
+2021-05-17,Island,14
 2021-05-17,London,36
-2021-05-17,LowerMainland,304
-2021-05-17,Northern,10
+2021-05-17,LowerMainland,327
+2021-05-17,Northern,9
 2021-05-17,Toronto,324
 2021-05-17,Waterloo,6
 2021-05-18,Halton,1
+2021-05-18,Interior,61
+2021-05-18,Island,15
+2021-05-18,LowerMainland,393
+2021-05-18,Northern,30
 2021-05-18,Toronto,4
