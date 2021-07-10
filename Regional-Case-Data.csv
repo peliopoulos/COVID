@@ -525,6 +525,7 @@ Date,Region,Case_Count
 2021-07-05,PrinceGeorgeArea,0
 2021-07-06,PrinceGeorgeArea,0
 2021-07-07,PrinceGeorgeArea,0
+2021-07-08,PrinceGeorgeArea,0
 2020-01-01,Waterloo,1
 2020-01-21,Toronto,1
 2020-01-22,Toronto,2
@@ -3065,7 +3066,7 @@ Date,Region,Case_Count
 2021-02-12,Toronto,365
 2021-02-12,Waterloo,31
 2021-02-13,Halton,28
-2021-02-13,Interior,33
+2021-02-13,Interior,35
 2021-02-13,Island,15
 2021-02-13,London,12
 2021-02-13,LowerMainland,350
@@ -3151,7 +3152,7 @@ Date,Region,Case_Count
 2021-02-22,Toronto,360
 2021-02-22,Waterloo,45
 2021-02-23,Halton,39
-2021-02-23,Interior,33
+2021-02-23,Interior,34
 2021-02-23,Island,35
 2021-02-23,London,9
 2021-02-23,LowerMainland,423
@@ -3422,7 +3423,7 @@ Date,Region,Case_Count
 2021-03-27,Interior,43
 2021-03-27,Island,28
 2021-03-27,London,76
-2021-03-27,LowerMainland,717
+2021-03-27,LowerMainland,716
 2021-03-27,Northern,34
 2021-03-27,Toronto,767
 2021-03-27,Waterloo,42
@@ -3581,7 +3582,7 @@ Date,Region,Case_Count
 2021-04-15,Interior,93
 2021-04-15,Island,45
 2021-04-15,London,101
-2021-04-15,LowerMainland,757
+2021-04-15,LowerMainland,756
 2021-04-15,Northern,35
 2021-04-15,Toronto,1240
 2021-04-15,Waterloo,85
@@ -3589,7 +3590,7 @@ Date,Region,Case_Count
 2021-04-16,Interior,102
 2021-04-16,Island,29
 2021-04-16,London,101
-2021-04-16,LowerMainland,935
+2021-04-16,LowerMainland,934
 2021-04-16,Northern,19
 2021-04-16,Toronto,1197
 2021-04-16,Waterloo,71
@@ -3597,7 +3598,7 @@ Date,Region,Case_Count
 2021-04-17,Interior,63
 2021-04-17,Island,42
 2021-04-17,London,107
-2021-04-17,LowerMainland,826
+2021-04-17,LowerMainland,825
 2021-04-17,Northern,37
 2021-04-17,Toronto,1112
 2021-04-17,Waterloo,100
@@ -3630,7 +3631,7 @@ Date,Region,Case_Count
 2021-04-21,Interior,74
 2021-04-21,Island,41
 2021-04-21,London,92
-2021-04-21,LowerMainland,797
+2021-04-21,LowerMainland,796
 2021-04-21,Northern,49
 2021-04-21,Toronto,1176
 2021-04-21,Waterloo,80
@@ -3745,7 +3746,7 @@ Date,Region,Case_Count
 2021-05-05,Interior,45
 2021-05-05,Island,16
 2021-05-05,London,82
-2021-05-05,LowerMainland,622
+2021-05-05,LowerMainland,621
 2021-05-05,Northern,29
 2021-05-05,Toronto,790
 2021-05-05,Waterloo,68
@@ -3762,7 +3763,7 @@ Date,Region,Case_Count
 2021-05-07,Interior,48
 2021-05-07,Island,23
 2021-05-07,London,67
-2021-05-07,LowerMainland,528
+2021-05-07,LowerMainland,526
 2021-05-07,Northern,18
 2021-05-07,Other,1
 2021-05-07,Toronto,695
@@ -4190,7 +4191,7 @@ Date,Region,Case_Count
 2021-06-29,Interior,12
 2021-06-29,Island,1
 2021-06-29,London,4
-2021-06-29,LowerMainland,32
+2021-06-29,LowerMainland,64
 2021-06-29,Other,1
 2021-06-29,Toronto,23
 2021-06-29,Waterloo,36
@@ -4203,7 +4204,7 @@ Date,Region,Case_Count
 2021-06-30,Waterloo,39
 2021-07-01,Halton,7
 2021-07-01,Interior,6
-2021-07-01,LowerMainland,30
+2021-07-01,LowerMainland,29
 2021-07-01,Other,1
 2021-07-01,Toronto,12
 2021-07-01,Waterloo,23
@@ -4216,9 +4217,9 @@ Date,Region,Case_Count
 2021-07-02,Toronto,21
 2021-07-02,Waterloo,29
 2021-07-03,Halton,3
-2021-07-03,Interior,20
+2021-07-03,Interior,21
 2021-07-03,London,7
-2021-07-03,LowerMainland,17
+2021-07-03,LowerMainland,16
 2021-07-03,Other,1
 2021-07-03,Toronto,25
 2021-07-03,Waterloo,25
@@ -4241,15 +4242,19 @@ Date,Region,Case_Count
 2021-07-06,Interior,15
 2021-07-06,Island,2
 2021-07-06,London,3
-2021-07-06,LowerMainland,30
+2021-07-06,LowerMainland,29
 2021-07-06,Toronto,11
 2021-07-06,Waterloo,29
 2021-07-07,Halton,4
 2021-07-07,Interior,21
 2021-07-07,Island,7
 2021-07-07,London,4
-2021-07-07,LowerMainland,33
-2021-07-07,Northern,2
+2021-07-07,LowerMainland,76
+2021-07-07,Northern,1
 2021-07-07,Toronto,5
 2021-07-07,Waterloo,19
+2021-07-08,Interior,15
+2021-07-08,Island,4
+2021-07-08,LowerMainland,25
+2021-07-08,Northern,1
 2021-07-08,Toronto,1
